@@ -1,89 +1,90 @@
-# ⚡ SocialApp API: The High-Octane Social Backend
+# 🚀 SocialApp API: Next-Generation Backend
 
-<p align="center">
-  <img src="https://via.placeholder.com/800x150/000000/00FF00?text=STATUS%3A+ONLINE+%7C+ASP.NET+CORE+ENGINE+OPERATIONAL" alt="API Status Banner" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/license/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=00FF00" alt="License">
-  <img src="https://img.shields.io/badge/Framework-ASP.NET_8-9A47DC?style=for-the-badge&logo=dotnet&logoColor=white" alt="ASP.NET Core">
-  <img src="https://img.shields.io/badge/API_Docs-Swagger_UI-00BFFF?style=for-the-badge&logo=openapi-initiative" alt="Swagger">
-  <img src="https://img.shields.io/github/stars/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=FF69B4" alt="Stars">
-  <img src="https://img.shields.io/badge/Architecture-Clean_Code-FF5733?style=for-the-badge&logo=csharp" alt="Architecture">
-</p>
+[![License](https://img.shields.io/github/license/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=2ecc71)](LICENSE)
+[![.NET Core](https://img.shields.io/badge/Framework-ASP.NET_Core_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/en-us/apps/aspnet)
+[![API Documentation](https://img.shields.io/badge/Documentation-Swagger_UI-85EA2D?style=for-the-badge&logo=openapi-initiative)](https://localhost:7051/swagger/index.html)
+[![GitHub Stars](https://img.shields.io/github/stars/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=FFD700)](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-FF69B4?style=for-the-badge&logo=github)](CONTRIBUTING.md)
 
 ---
 
-## 🛑 **[ACCESS GRANTED] Project Manifesto**
+## 🎯 Project Overview
 
-This is not just another API. This is the **SocialApp Backend**, a robust, lightning-fast engine built to power a large-scale social platform. Our focus is on **low-latency performance**, **unbreakable security**, and **developer elegance**.
+This repository hosts the **high-performance, scalable backend** for the SocialApp platform, built entirely on **ASP.NET Core Web API**.
 
-### **🔥 Core Strengths**
+The API is designed following **RESTful principles** and a **layered architecture** (likely Clean or Repository Pattern) to ensure maintainability, testability, and separation of concerns. It handles all core social networking features, from content management to real-time messaging primitives.
 
-* **ASP.NET Core Power:** Leveraging the fastest backend framework to handle millions of requests per day.
-* **Decoupled Architecture:** Built on the **Clean Architecture** model, making it infinitely scalable and testable.
-* **Full Spectrum REST:** Comprehensive, intuitive, and properly versioned endpoints covering every social feature imaginable.
+### Architectural Highlights
 
----
-
-## 💻 **SYSTEM SPECIFICATIONS (Tech Stack)**
-
-We chose the best tools for maximum impact and efficiency.
-
-| Component | Technology | 👾 Icon | Value Proposition |
-| :---: | :---: | :---: | :--- |
-| **Backend Core** | **ASP.NET Core 8+** | `⚡` | **Blazing fast** performance for APIs. |
-| **Database** | **[PostgreSQL / SQL Server]** | `💾` | Reliable and powerful data persistence. |
-| **Data Layer** | **[Entity Framework Core]** | `🔗` | Seamless interaction via asynchronous ORM. |
-| **Security** | **JWT Bearer Token** | `🛡️` | Industry-standard, **stateless** authentication. |
-| **Media Handling**| **Dedicated File Endpoints**| `📁` | Secure upload and management for user media. |
+* **Clean Separation:** Controllers, Services (Business Logic), and Data Access are strictly separated.
+* **Asynchronous Operations:** Heavy use of `async`/`await` for non-blocking I/O, ensuring high throughput and responsiveness.
+* **Security Focused:** Authentication and authorization are managed centrally using **JWT Bearer Tokens**.
+* **Database First:** Uses [**Entity Framework Core** or **Dapper**] for efficient data access.
 
 ---
 
-## 🗺️ **API RESOURCE MAP (The Arsenal)**
+## 🛠️ Technology Stack
 
-Every endpoint is categorized and detailed for easy integration. **Base Path: `/api`**
-
-### 1️⃣ **Authentication & Identity (`/auth`)**
-| Function | Method | Endpoint | Security |
-| :--- | :---: | :--- | :---: |
-| **New User** | `POST` | `/auth/register` | `🔓 Public` |
-| **Login** | `POST` | `/auth/login` | `🔓 Public` |
-| **Current User** | `GET` | `/auth/me` | `🔐 JWT Required` |
-| **User Profile** | `PUT` | `/UserProfile/{userId}` | `🔐 JWT Required` |
-
-### 2️⃣ **Content & Interaction (`/Post`, `/Likes`, `/Comments`)**
-| Function | Method | Endpoint | Details |
-| :--- | :---: | :--- | :--- |
-| **Publish Post** | `POST` | `/Post` | The core content creation endpoint. |
-| **Get Feed** | `GET` | `/Feed/{userId}` | Retrieves the user's **personalized timeline**. |
-| **Toggle Like** | `POST/DELETE` | `/Likes` | Fast way to interact with content. |
-| **Update Comment** | `PUT` | `/Comments/{id}` | Modify existing comments. |
-
-### 3️⃣ **Messaging & Connectivity (`/Conversation`, `/Friendship`)**
-| Function | Method | Endpoint | Details |
-| :--- | :---: | :--- | :--- |
-| **Send Request** | `POST` | `/Friendship/{receiverId}`| Initiate a connection request. |
-| **Accept Request**| `PUT` | `/Friendship/{id}/accept`| Approve a pending request instantly. |
-| **Get Messages** | `GET` | `/Message-by-conversation/{conversationId}` | Retrieve chat history for a dedicated conversation. |
-
-### 4️⃣ **Discovery & Utilities (`/Search`, `/File`, `/Notification`)**
-| Function | Method | Endpoint | Details |
-| :--- | :---: | :--- | :--- |
-| **Global Search** | `GET` | `/Search/all` | Unified search across **Users & Posts**. |
-| **Trending Posts**| `GET` | `/Explore/trending` | Discover popular and viral content. |
-| **File Upload** | `POST` | `/File/upload` | Securely upload media for posts/avatars. |
+| Category | Technology | Icon | Purpose |
+| :--- | :--- | :---: | :--- |
+| **Backend Core** | **ASP.NET Core 8+** | 🌐 | High-performance, cross-platform API framework. |
+| **Authentication** | **JWT Bearer** | 🔑 | Secure, stateless, token-based authentication. |
+| **Data Access** | **[Entity Framework Core / Dapper]** | 💾 | ORM or Micro-ORM for database interaction. |
+| **Database** | **[SQL Server / PostgreSQL]** | 🗃️ | Primary persistent data store. |
+| **API Testing** | **Swagger/OpenAPI** | 📝 | Interactive documentation and sandbox environment. |
 
 ---
 
-## 🕹️ **SETUP PROTOCOL (Get Started)**
+## 📚 API Endpoint Structure
 
-### **Dependencies Check**
+The API is logically grouped to reflect the domain entities, ensuring an intuitive structure for client development.
 
-* **[.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download):** Essential for running the stack.
-* **[Database Server]:** Must be accessible (e.g., local PostgreSQL instance).
+### 🔐 Auth & Identity Management
 
-### **Initialization Sequence**
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/auth/register` | `POST` | Registers a new user account. |
+| `/api/auth/login` | `POST` | Authenticates user and returns **JWT Token**. |
+| `/api/auth/me` | `GET` | Retrieves the profile of the currently authenticated user. |
+| `/api/UserProfile/{userId}` | `GET/PUT` | Fetches or updates a specific user profile. |
+
+### 📰 Content & Interaction
+
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/Post` | `GET/POST` | Retrieves all posts or creates a new one. |
+| `/api/Post/{id}` | `PUT/DELETE` | Updates or deletes a specific post. |
+| `/api/Likes` | `POST` | Toggles a Like status on a resource (e.g., a Post). |
+| `/api/Comments` | `GET/POST` | Retrieves or adds a new comment. |
+
+### 💬 Communication & Connectivity
+
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/Friendship/{receiverId}`| `POST` | Initiates a friend request. |
+| `/api/Friendship/{id}/accept`| `PUT` | Accepts a pending friend request. |
+| `/api/Conversation` | `POST` | Creates a new private chat conversation. |
+| `/api/Message-by-conversation/{conversationId}` | `GET` | Retrieves all messages within a conversation. |
+
+### ⚙️ Discovery & Utilities
+
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/File/upload` | `POST` | Uploads media files (images, videos) to the server. |
+| `/api/Explore/trending` | `GET` | Returns globally trending and popular posts. |
+| `/api/Search/all` | `GET` | Performs a unified search across users and posts. |
+| `/api/Notification/{id}/read` | `PUT` | Marks a specific notification as read. |
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+
+* **[.NET 8.0 SDK](https://dotnet.microsoft.com/download):** Required to build and run the project.
+* **[Your Database System]:** (e.g., SQL Server instance running locally).
+
+### Installation
 
 1.  **Clone the Repository:**
     ```bash
@@ -91,36 +92,39 @@ Every endpoint is categorized and detailed for easy integration. **Base Path: `/
     cd SocialApp.Backend
     ```
 
-2.  **Database Configuration Injection:**
-    * Edit the `appsettings.Development.json` file to inject your connection string.
-    * *Execute Database Migrations:*
+2.  **Configure Database Connection:**
+    * Update the `ConnectionStrings` section in `appsettings.Development.json`.
+    * *If using Entity Framework Core, run migrations:*
         ```bash
-        dotnet ef database update 
+        dotnet ef database update
         ```
 
-3.  **Run the Server:**
+3.  **Run the API:**
     ```bash
-    dotnet run --launch-profile "https"
-    # Target URL: https://localhost:7051 (The Swagger Interface)
+    dotnet run
+    # API will typically run on: https://localhost:7051
     ```
 
-### **API Interface Access**
+### Testing and Documentation
 
-The interactive Swagger UI is your command center for testing:
+Access the interactive **Swagger UI** to test all API endpoints and view schemas:
 
-> **[COMMAND LINK]**: `https://localhost:7051/swagger/index.html` 🔗
+> [**Open Swagger Documentation**](https://localhost:7051/swagger/index.html) *(Adjust port if required)*
 
 ---
 
-## 💡 **CONTRIBUTION LOGIC**
+## 🤝 Contribution Guidelines
 
-We accept all authorized personnel for contributions. Adherence to best practices is mandatory.
+We highly value contributions! Whether it's a feature, bug fix, or documentation improvement, your input is welcome.
 
-### **Contribution Procedure**
+1.  **Fork** the repository.
+2.  Create a new branch for your feature: `git checkout -b feature/my-cool-feature`
+3.  Commit your changes following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard (e.g., `feat: Add endpoint for user blocking`).
+4.  Push to the branch: `git push origin feature/my-cool-feature`
+5.  Open a **Pull Request (PR)** and detail your changes.
 
-1.  **FORK** the repository to your own account.
-2.  Create a feature branch: `git checkout -b feat/add-video-support`
-3.  Commit your code using **Conventional Commits** (e.g., `fix: Resolve notification reading bug`).
-4.  Open a **Pull Request** detailing the task completed.
+---
 
-> **_Maintainers_** appreciate clean, tested
+## **License**
+
+This project is licensed under the [**MIT License**](LICENSE.md).
