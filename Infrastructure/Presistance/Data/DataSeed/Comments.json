@@ -1,0 +1,107 @@
+﻿[
+  {
+    "Content": "Congratulations on the launch!",
+    "PostId": 1,
+    "UserId": 2
+  },
+  {
+    "Content": "Can't wait to try it out!",
+    "PostId": 1,
+    "UserId": 3,
+    "ParentCommentId": 1
+  },
+  {
+    "Content": "Awesome post!",
+    "PostId": 1,
+    "UserId": 7,
+    "ParentCommentId": 1
+  },
+  {
+    "Content": "Every millisecond counts! Keep up the great work.",
+    "PostId": 2,
+    "UserId": 4
+  },
+  {
+    "Content": "Interesting take on the topic.",
+    "PostId": 2,
+    "UserId": 8,
+    "ParentCommentId": 4
+  },
+  {
+    "Content": "Totally agree. A smooth mobile experience is crucial.",
+    "PostId": 3,
+    "UserId": 5
+  },
+  {
+    "Content": "Love this!",
+    "PostId": 3,
+    "UserId": 9,
+    "ParentCommentId": 6
+  },
+  {
+    "Content": "I prefer GitHub Actions over Jenkins for its simplicity.",
+    "PostId": 4,
+    "UserId": 2
+  },
+  {
+    "Content": "Good planning prevents poor performance.",
+    "PostId": 5,
+    "UserId": 1
+  },
+  {
+    "Content": "I'm a big fan of Flutter for its performance and beautiful UI.",
+    "PostId": 6,
+    "UserId": 3
+  },
+  {
+    "Content": "I've used React Native and it's great for leveraging web skills.",
+    "PostId": 6,
+    "UserId": 2,
+    "ParentCommentId": 10
+  },
+  {
+    "Content": "That sounds fascinating! What kind of models are you using?",
+    "PostId": 7,
+    "UserId": 4
+  },
+  {
+    "Content": "Great catch! Better in staging than in production.",
+    "PostId": 8,
+    "UserId": 5
+  },
+  {
+    "Content": "Security first! Always.",
+    "PostId": 9,
+    "UserId": 6
+  },
+  {
+    "Content": "Looking forward to seeing the new campaign.",
+    "PostId": 10,
+    "UserId": 7
+  },
+  {
+    "Content": "A classic book! A must-read for every developer.",
+    "PostId": 11,
+    "UserId": 8
+  },
+  {
+    "Content": "So true. It's the small things that make a big difference.",
+    "PostId": 12,
+    "UserId": 9
+  },
+  {
+    "Content": "Have you looked into Helm charts for managing deployments?",
+    "PostId": 13,
+    "UserId": 10
+  },
+  {
+    "Content": "Primary constructors are a game-changer for me.",
+    "PostId": 14,
+    "UserId": 2
+  },
+  {
+    "Content": "What tools do you use for data visualization?",
+    "PostId": 15,
+    "UserId": 3
+  }
+]

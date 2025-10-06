@@ -1,0 +1,52 @@
+﻿[
+  {
+    "RequesterId": 1,
+    "ReceiverId": 2,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 1,
+    "ReceiverId": 3,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 2,
+    "ReceiverId": 4,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 3,
+    "ReceiverId": 5,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 6,
+    "ReceiverId": 7,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 8,
+    "ReceiverId": 9,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 10,
+    "ReceiverId": 1,
+    "Status": "Accepted"
+  },
+  {
+    "RequesterId": 2,
+    "ReceiverId": 5,
+    "Status": "Pending"
+  },
+  {
+    "RequesterId": 3,
+    "ReceiverId": 8,
+    "Status": "Pending"
+  },
+  {
+    "RequesterId": 4,
+    "ReceiverId": 9,
+    "Status": "Rejected"
+  }
+]

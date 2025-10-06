@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "dfd8tMH/xFo=",
+  "success": true,
+  "projectFilePath": "D:\\Project.Net\\FaceBook\\FaceBookEnd\\FaceBook\\Infrastructure\\Presentation\\Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bana\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\8.0.20\\microsoft.aspnetcore.connections.abstractions.8.0.20.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\8.0.20\\microsoft.aspnetcore.signalr.client.core.8.0.20.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\8.0.20\\microsoft.aspnetcore.signalr.common.8.0.20.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\8.0.20\\microsoft.aspnetcore.signalr.protocols.json.8.0.20.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.features\\8.0.20\\microsoft.extensions.features.8.0.20.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.1\\microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

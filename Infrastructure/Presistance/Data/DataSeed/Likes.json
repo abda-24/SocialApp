@@ -1,0 +1,122 @@
+﻿[
+  {
+    "UserId": 2,
+    "PostId": 1
+  },
+  {
+    "UserId": 3,
+    "PostId": 1
+  },
+  {
+    "UserId": 4,
+    "PostId": 1
+  },
+  {
+    "UserId": 5,
+    "PostId": 1
+  },
+  {
+    "UserId": 1,
+    "PostId": 2
+  },
+  {
+    "UserId": 3,
+    "PostId": 2
+  },
+  {
+    "UserId": 4,
+    "PostId": 3
+  },
+  {
+    "UserId": 1,
+    "PostId": 3
+  },
+  {
+    "UserId": 6,
+    "PostId": 3
+  },
+  {
+    "UserId": 2,
+    "PostId": 4
+  },
+  {
+    "UserId": 5,
+    "PostId": 4
+  },
+  {
+    "UserId": 7,
+    "PostId": 4
+  },
+  {
+    "UserId": 1,
+    "PostId": 5
+  },
+  {
+    "UserId": 8,
+    "PostId": 5
+  },
+  {
+    "UserId": 9,
+    "PostId": 5
+  },
+  {
+    "UserId": 2,
+    "PostId": 6
+  },
+  {
+    "UserId": 3,
+    "PostId": 6
+  },
+  {
+    "UserId": 10,
+    "PostId": 6
+  },
+  {
+    "UserId": 1,
+    "PostId": 7
+  },
+  {
+    "UserId": 4,
+    "PostId": 7
+  },
+  {
+    "UserId": 8,
+    "PostId": 7
+  },
+  {
+    "UserId": 9,
+    "PostId": 8
+  },
+  {
+    "UserId": 1,
+    "PostId": 8
+  },
+  {
+    "UserId": 2,
+    "PostId": 9
+  },
+  {
+    "UserId": 5,
+    "PostId": 10
+  },
+  {
+    "UserId": 6,
+    "PostId": 11
+  },
+  {
+    "UserId": 7,
+    "PostId": 12
+  },
+  {
+    "UserId": 8,
+    "PostId": 13
+  },
+  {
+    "UserId": 9,
+    "PostId": 14
+  },
+  {
+    "UserId": 10,
+    "PostId": 15
+  }
+]

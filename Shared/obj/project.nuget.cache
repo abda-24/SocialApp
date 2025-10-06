@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UKXMkgJ2slA=",
+  "success": true,
+  "projectFilePath": "D:\\Project.Net\\FaceBook\\FaceBookEnd\\FaceBook\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\bana\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Username": "Admin",
+    "Email": "admin@app.com",
+    "Bio": "Administrator...",
+    "ProfilePictureUrl": "/images/profiles/1.jpg"
+  },
+  {
+    "Username": "AliHassan",
+    "Email": "ali.hassan@app.com",
+    "Bio": "Backend developer...",
+    "ProfilePictureUrl": "/images/profiles/2.jpg"
+  },
+  {
+    "Username": "FatimaZahra",
+    "Email": "fatima.z@app.com",
+    "Bio": "Frontend developer...",
+    "ProfilePictureUrl": "/images/profiles/3.jpg"
+  },
+  {
+    "Username": "OmarKhaled",
+    "Email": "omar.k@app.com",
+    "Bio": "DevOps engineer...",
+    "ProfilePictureUrl": "/images/profiles/4.jpg"
+  },
+  {
+    "Username": "NourAdel",
+    "Email": "nour.a@app.com",
+    "Bio": "Project Manager...",
+    "ProfilePictureUrl": "/images/profiles/5.jpg"
+  },
+  {
+    "Username": "YoussefAmr",
+    "Email": "youssef.a@app.com",
+    "Bio": "Mobile developer...",
+    "ProfilePictureUrl": "/images/profiles/6.jpg"
+  },
+  {
+    "Username": "SaraEhab",
+    "Email": "sara.e@app.com",
+    "Bio": "Data Scientist...",
+    "ProfilePictureUrl": "/images/profiles/7.jpg"
+  },
+  {
+    "Username": "MonaSamir",
+    "Email": "mona.s@app.com",
+    "Bio": "QA Engineer...",
+    "ProfilePictureUrl": "/images/profiles/8.jpg"
+  },
+  {
+    "Username": "KarimAdel",
+    "Email": "karim.a@app.com",
+    "Bio": "Cybersecurity expert.",
+    "ProfilePictureUrl": "/images/profiles/9.jpg"
+  },
+  {
+    "Username": "LailaNagy",
+    "Email": "laila.n@app.com",
+    "Bio": "Content creator...",
+    "ProfilePictureUrl": "/images/profiles/10.jpg"
+  }
+]

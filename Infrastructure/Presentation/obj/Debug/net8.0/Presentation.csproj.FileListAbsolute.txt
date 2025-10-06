@@ -1,0 +1,17 @@
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\Presentation.deps.json
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\Presentation.dll
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\Presentation.pdb
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\ServiceAbstraction.dll
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\Shared.dll
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\ServiceAbstraction.pdb
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\bin\Debug\net8.0\Shared.pdb
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.csproj.AssemblyReference.cache
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.AssemblyInfoInputs.cache
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.AssemblyInfo.cs
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.csproj.CoreCompileInputs.cache
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presenta.BC777DBE.Up2Date
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.dll
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\refint\Presentation.dll
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\Presentation.pdb
+D:\Project.Net\FaceBook\FaceBookEnd\FaceBook\Infrastructure\Presentation\obj\Debug\net8.0\ref\Presentation.dll

@@ -1,0 +1,77 @@
+﻿[
+  {
+    "Content": "Just launched our new project!...",
+    "ImageUrl": "/images/posts/1p.jpg",
+    "UserId": 1
+  },
+  {
+    "Content": "Optimizing database queries today...",
+    "ImageUrl": "/images/posts/2p.jpg",
+    "UserId": 2
+  },
+  {
+    "Content": "Working on a new responsive design...",
+    "ImageUrl": "/images/posts/3p.jpg",
+    "UserId": 3
+  },
+  {
+    "Content": "Automating the deployment pipeline...",
+    "ImageUrl": "/images/posts/4p.jpg",
+    "UserId": 4
+  },
+  {
+    "Content": "Planning the next sprint...",
+    "ImageUrl": "/images/posts/5p.jpg",
+    "UserId": 5
+  },
+  {
+    "Content": "Flutter vs React Native:...",
+    "ImageUrl": "/images/posts/6p.jpg",
+    "UserId": 6
+  },
+  {
+    "Content": "Exploring new machine learning models...",
+    "ImageUrl": "/images/posts/7p.jpg",
+    "UserId": 7
+  },
+  {
+    "Content": "Found a critical bug...",
+    "ImageUrl": "/images/posts/8p.jpg",
+    "UserId": 8
+  },
+  {
+    "Content": "Remember to always sanitize your inputs!...",
+    "ImageUrl": "/images/posts/9p.jpg",
+    "UserId": 9
+  },
+  {
+    "Content": "Content is king...",
+    "ImageUrl": "/images/posts/10p.jpg",
+    "UserId": 10
+  },
+  {
+    "Content": "Just finished a great book...",
+    "ImageUrl": "/images/posts/1p.jpg",
+    "UserId": 2
+  },
+  {
+    "Content": "The difference between a good design...",
+    "ImageUrl": "/images/posts/2p.jpg",
+    "UserId": 3
+  },
+  {
+    "Content": "Kubernetes can be complex...",
+    "ImageUrl": "/images/posts/3p.jpg",
+    "UserId": 4
+  },
+  {
+    "Content": "What's your favorite C# 12 feature?...",
+    "ImageUrl": "/images/posts/4p.jpg",
+    "UserId": 1
+  },
+  {
+    "Content": "The best part of being a data scientist...",
+    "ImageUrl": "/images/posts/5p.jpg",
+    "UserId": 7
+  }
+]
