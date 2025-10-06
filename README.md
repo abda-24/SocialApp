@@ -1,160 +1,130 @@
-# 🚀 SocialApp Backend API 🚀
+# 🚀 SocialApp API: Next-Generation Backend
 
-## Powering Dynamic Social Experiences with .NET
+[![License](https://img.shields.io/github/license/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=2ecc71)](LICENSE)
+[![.NET Core](https://img.shields.io/badge/Framework-ASP.NET_Core_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/en-us/apps/aspnet)
+[![API Documentation](https://img.shields.io/badge/Documentation-Swagger_UI-85EA2D?style=for-the-badge&logo=openapi-initiative)](https://localhost:7051/swagger/index.html)
+[![GitHub Stars](https://img.shields.io/github/stars/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=FFD700)](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-FF69B4?style=for-the-badge&logo=github)](CONTRIBUTING.md)
 
-This project presents a robust and comprehensive Backend API developed using **.NET**, designed to be the scalable and high-performance backbone for modern web and mobile social applications. It meticulously integrates cutting-edge technologies and best practices to deliver a resilient, feature-rich, and efficient platform.
+---
 
---- 
+## 🎯 Project Overview
 
-## ✨ Key Features & Modules ✨
+This repository hosts the **high-performance, scalable backend** for the SocialApp platform, built entirely on **ASP.NET Core Web API**.
 
-Our API is engineered with a modular approach, offering a wide array of functionalities to build engaging social platforms:
+The API is designed following **RESTful principles** and a **layered architecture** (likely Clean or Repository Pattern) to ensure maintainability, testability, and separation of concerns. It handles all core social networking features, from content management to real-time messaging primitives.
 
-### 🔐 Authentication & Security
+### Architectural Highlights
 
-An integrated system ensuring secure user interactions from start to finish. This includes:
-- User Registration & Login
-- Email Verification & Password Recovery
-- Secure Session Management
+* **Clean Separation:** Controllers, Services (Business Logic), and Data Access are strictly separated.
+* **Asynchronous Operations:** Heavy use of `async`/`await` for non-blocking I/O, ensuring high throughput and responsiveness.
+* **Security Focused:** Authentication and authorization are managed centrally using **JWT Bearer Tokens**.
+* **Database First:** Uses [**Entity Framework Core** or **Dapper**] for efficient data access.
 
-![Authentication Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/Auth1.PNG )
-*(Replace `YOUR_USERNAME/YOUR_REPO_NAME` with your actual GitHub details and ensure images are in a `docs` folder)*
+---
 
-### 💬 Content & Interaction Management
+## 🛠️ Technology Stack
 
-Empowering users to create, share, and engage with content effortlessly:
-- **Posts:** Create, retrieve, update, and delete user posts.
-- **Comments:** Full CRUD operations for comments on posts.
-- **Likes:** Manage likes on various content types.
+| Category | Technology | Icon | Purpose |
+| :--- | :--- | :---: | :--- |
+| **Backend Core** | **ASP.NET Core 8+** | 🌐 | High-performance, cross-platform API framework. |
+| **Authentication** | **JWT Bearer** | 🔑 | Secure, stateless, token-based authentication. |
+| **Data Access** | **[Entity Framework Core / Dapper]** | 💾 | ORM or Micro-ORM for database interaction. |
+| **Database** | **[SQL Server / PostgreSQL]** | 🗃️ | Primary persistent data store. |
+| **API Testing** | **Swagger/OpenAPI** | 📝 | Interactive documentation and sandbox environment. |
 
-![Comments Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/2.PNG )
-![Likes Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/7.PNG )
-![Post Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/8.PNG )
+---
 
-### 🗣️ Communication & Notifications
+## 📚 API Endpoint Structure
 
-Facilitating real-time interactions and keeping users informed:
-- **Conversations:** Manage one-on-one or group conversations.
-- **Messages:** Send and receive messages within conversations.
-- **Notifications:** Real-time alerts for user activities (e.g., new likes, comments, friend requests).
+The API is logically grouped to reflect the domain entities, ensuring an intuitive structure for client development.
 
-![Conversation Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/3.PNG )
-![Message Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/7.PNG )
-![Notification Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/8.PNG )
+### 🔐 Auth & Identity Management
 
-### 📂 File Management
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/auth/register` | `POST` | Registers a new user account. |
+| `/api/auth/login` | `POST` | Authenticates user and returns **JWT Token**. |
+| `/api/auth/me` | `GET` | Retrieves the profile of the currently authenticated user. |
+| `/api/UserProfile/{userId}` | `GET/PUT` | Fetches or updates a specific user profile. |
 
-Efficient handling of user-generated content and media:
-- Upload, retrieve, and delete files.
+### 📰 Content & Interaction
 
-![File Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/5.PNG )
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/Post` | `GET/POST` | Retrieves all posts or creates a new one. |
+| `/api/Post/{id}` | `PUT/DELETE` | Updates or deletes a specific post. |
+| `/api/Likes` | `POST` | Toggles a Like status on a resource (e.g., a Post). |
+| `/api/Comments` | `GET/POST` | Retrieves or adds a new comment. |
 
-### 🤝 Social Connections
+### 💬 Communication & Connectivity
 
-Building and managing user networks:
-- **Friendship:** Send, accept, decline, and manage friend requests.
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/Friendship/{receiverId}`| `POST` | Initiates a friend request. |
+| `/api/Friendship/{id}/accept`| `PUT` | Accepts a pending friend request. |
+| `/api/Conversation` | `POST` | Creates a new private chat conversation. |
+| `/api/Message-by-conversation/{conversationId}` | `GET` | Retrieves all messages within a conversation. |
 
-![Friendship Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/6.PNG )
+### ⚙️ Discovery & Utilities
 
-### 🔍 Discovery & Search
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/File/upload` | `POST` | Uploads media files (images, videos) to the server. |
+| `/api/Explore/trending` | `GET` | Returns globally trending and popular posts. |
+| `/api/Search/all` | `GET` | Performs a unified search across users and posts. |
+| `/api/Notification/{id}/read` | `PUT` | Marks a specific notification as read. |
 
-Helping users find content and connect with others:
-- **Explore:** Discover trending content.
-- **Feed:** Personalized content feeds for users.
-- **Search:** Comprehensive search across users and posts.
-- **Recommendations:** Intelligent suggestions for posts and users.
+---
 
-![Explore & Feed Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/4.PNG )
-![Recommendation Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/9.PNG )
-![Search Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/9.PNG )
-
-### 👤 User Profiles
-
-Comprehensive management of user information:
-- View and update user profiles.
-
-![UserProfile Endpoints](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/docs/9.PNG )
-
---- 
-
-## 🛠️ Technologies Used 🛠️
-
-- **Backend Framework:** .NET (C#)
-- **Database:** (Specify your database, e.g., SQL Server, PostgreSQL, MongoDB)
-- **API Documentation:** Swagger/OpenAPI for interactive API exploration.
-- **Authentication:** JWT (JSON Web Tokens) for secure API access.
-- **Other Libraries/Tools:** (List any other significant technologies, e.g., Entity Framework Core, AutoMapper, MediatR)
-
---- 
-
-## 🚀 Getting Started 🚀
-
-Follow these steps to get your development environment set up and run the SocialApp Backend API locally:
+## 💻 Getting Started
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed:
-- [.NET SDK](https://dotnet.microsoft.com/download ) (Specify version, e.g., 8.0)
-- [Visual Studio](https://visualstudio.microsoft.com/ ) or [Visual Studio Code](https://code.visualstudio.com/ ) with C# extension
-- (Your Database) (e.g., SQL Server Management Studio, Docker for PostgreSQL)
+* **[.NET 8.0 SDK](https://dotnet.microsoft.com/download):** Required to build and run the project.
+* **[Your Database System]:** (e.g., SQL Server instance running locally).
 
 ### Installation
 
-1.  **Clone the repository:**
+1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    cd YOUR_REPO_NAME
-    ```
-    *(Remember to replace `YOUR_USERNAME/YOUR_REPO_NAME` )*
-
-2.  **Restore NuGet packages:**
-    ```bash
-    dotnet restore
+    git clone [YOUR_REPO_URL]
+    cd SocialApp.Backend
     ```
 
-3.  **Update database connection string:**
-    Open `appsettings.json` (or `appsettings.Development.json`) and update the `ConnectionStrings` section to point to your local database.
+2.  **Configure Database Connection:**
+    * Update the `ConnectionStrings` section in `appsettings.Development.json`.
+    * *If using Entity Framework Core, run migrations:*
+        ```bash
+        dotnet ef database update
+        ```
 
-4.  **Apply database migrations:**
-    ```bash
-    dotnet ef database update
-    ```
-
-5.  **Run the application:**
+3.  **Run the API:**
     ```bash
     dotnet run
+    # API will typically run on: https://localhost:7051
     ```
 
-The API will typically run on `https://localhost:5001` (or `http://localhost:5000` ). You can access the Swagger UI at `https://localhost:5001/swagger` to explore the endpoints.
+### Testing and Documentation
 
---- 
+Access the interactive **Swagger UI** to test all API endpoints and view schemas:
 
-## 🤝 Contribution 🤝
+> [**Open Swagger Documentation**](https://localhost:7051/swagger/index.html) *(Adjust port if required)*
 
-We welcome contributions to the SocialApp Backend API! If you have suggestions for improvements, new features, or bug fixes, please follow these steps:
+---
 
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/YourFeature` ).
-3.  Make your changes and commit them (`git commit -m 'Add new feature'`).
-4.  Push to the branch (`git push origin feature/YourFeature`).
-5.  Open a Pull Request.
+## 🤝 Contribution Guidelines
 
-Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+We highly value contributions! Whether it's a feature, bug fix, or documentation improvement, your input is welcome.
 
---- 
+1.  **Fork** the repository.
+2.  Create a new branch for your feature: `git checkout -b feature/my-cool-feature`
+3.  Commit your changes following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard (e.g., `feat: Add endpoint for user blocking`).
+4.  Push to the branch: `git push origin feature/my-cool-feature`
+5.  Open a **Pull Request (PR)** and detail your changes.
 
-## 📄 License 📄
+---
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT ) - see the [LICENSE.md](LICENSE.md) file for details.
+## **License**
 
---- 
-
-## 📧 Contact 📧
-
-For any inquiries or feedback, please reach out to:
-- **Your Name:** [Your Email Address](mailto:your.email@example.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile )
-
---- 
-
-Made with ❤️ by [Your Name/Team Name]
+This project is licensed under the [**MIT License**](LICENSE.md).
