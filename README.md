@@ -1,130 +1,109 @@
-# 🚀 SocialApp API: Next-Generation Backend
 
-[![License](https://img.shields.io/github/license/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=2ecc71)](LICENSE)
-[![.NET Core](https://img.shields.io/badge/Framework-ASP.NET_Core_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/en-us/apps/aspnet)
-[![API Documentation](https://img.shields.io/badge/Documentation-Swagger_UI-85EA2D?style=for-the-badge&logo=openapi-initiative)](https://localhost:7051/swagger/index.html)
-[![GitHub Stars](https://img.shields.io/github/stars/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=for-the-badge&color=FFD700)](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-FF69B4?style=for-the-badge&logo=github)](CONTRIBUTING.md)
-
----
-
-## 🎯 Project Overview
-
-This repository hosts the **high-performance, scalable backend** for the SocialApp platform, built entirely on **ASP.NET Core Web API**.
-
-The API is designed following **RESTful principles** and a **layered architecture** (likely Clean or Repository Pattern) to ensure maintainability, testability, and separation of concerns. It handles all core social networking features, from content management to real-time messaging primitives.
-
-### Architectural Highlights
-
-* **Clean Separation:** Controllers, Services (Business Logic), and Data Access are strictly separated.
-* **Asynchronous Operations:** Heavy use of `async`/`await` for non-blocking I/O, ensuring high throughput and responsiveness.
-* **Security Focused:** Authentication and authorization are managed centrally using **JWT Bearer Tokens**.
-* **Database First:** Uses [**Entity Framework Core** or **Dapper**] for efficient data access.
+**Highlights:**
+- **Clean Architecture:** Separation of concerns (Controllers → Services → Repositories)  
+- **Asynchronous Operations:** Full async/await for high throughput  
+- **Security-first:** JWT Authentication + Role-based Access Control  
+- **Real-time Communication:** SignalR for notifications and messaging  
+- **Database Management:** Entity Framework Core with Unit of Work pattern  
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Category | Technology | Icon | Purpose |
-| :--- | :--- | :---: | :--- |
-| **Backend Core** | **ASP.NET Core 8+** | 🌐 | High-performance, cross-platform API framework. |
-| **Authentication** | **JWT Bearer** | 🔑 | Secure, stateless, token-based authentication. |
-| **Data Access** | **[Entity Framework Core / Dapper]** | 💾 | ORM or Micro-ORM for database interaction. |
-| **Database** | **[SQL Server / PostgreSQL]** | 🗃️ | Primary persistent data store. |
-| **API Testing** | **Swagger/OpenAPI** | 📝 | Interactive documentation and sandbox environment. |
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| Backend | ASP.NET Core 8 🌐 | High-performance Web API framework |
+| Auth & Identity | ASP.NET Core Identity + JWT 🔑 | Secure token-based authentication |
+| ORM | Entity Framework Core 💾 | Data access and migrations |
+| Database | SQL Server 🗃️ | Persistent data storage |
+| Real-Time | SignalR 💬 | Real-time notifications & chat |
+| Mapping | AutoMapper 🔄 | Mapping DTOs to Entities and vice versa |
 
 ---
 
-## 📚 API Endpoint Structure
+## 🌟 Key Modules & Features
 
-The API is logically grouped to reflect the domain entities, ensuring an intuitive structure for client development.
+### **1. User Management**
+- Full registration, login, logout functionality  
+- User profile management (bio, profile picture, role assignment)  
+- Role-based permissions for admin and regular users  
 
-### 🔐 Auth & Identity Management
+### **2. Posts & Content**
+- Create, read, update, delete posts  
+- Attach media files (images, videos)  
+- Commenting system with replies  
+- Like/Unlike posts  
 
-| Endpoint | Method | Description |
-| :--- | :---: | :--- |
-| `/api/auth/register` | `POST` | Registers a new user account. |
-| `/api/auth/login` | `POST` | Authenticates user and returns **JWT Token**. |
-| `/api/auth/me` | `GET` | Retrieves the profile of the currently authenticated user. |
-| `/api/UserProfile/{userId}` | `GET/PUT` | Fetches or updates a specific user profile. |
+### **3. Friendships**
+- Send, accept, reject, or remove friend requests  
+- View friends list and pending requests  
 
-### 📰 Content & Interaction
+### **4. Messaging & Conversations**
+- Real-time chat between users using SignalR  
+- Support for private conversations  
+- Mark messages as read  
 
-| Endpoint | Method | Description |
-| :--- | :---: | :--- |
-| `/api/Post` | `GET/POST` | Retrieves all posts or creates a new one. |
-| `/api/Post/{id}` | `PUT/DELETE` | Updates or deletes a specific post. |
-| `/api/Likes` | `POST` | Toggles a Like status on a resource (e.g., a Post). |
-| `/api/Comments` | `GET/POST` | Retrieves or adds a new comment. |
+### **5. Notifications**
+- Real-time notifications for likes, comments, friend requests, and messages  
+- Mark notifications as read  
+- Store historical notifications  
 
-### 💬 Communication & Connectivity
+### **6. Files & Media Upload**
+- Upload images and videos  
+- Retrieve files by ID  
+- Delete files  
 
-| Endpoint | Method | Description |
-| :--- | :---: | :--- |
-| `/api/Friendship/{receiverId}`| `POST` | Initiates a friend request. |
-| `/api/Friendship/{id}/accept`| `PUT` | Accepts a pending friend request. |
-| `/api/Conversation` | `POST` | Creates a new private chat conversation. |
-| `/api/Message-by-conversation/{conversationId}` | `GET` | Retrieves all messages within a conversation. |
+### **7. Explore & Search**
+- Search users and posts  
+- View trending posts globally  
 
-### ⚙️ Discovery & Utilities
+### **8. Admin Dashboard**
+- Manage users (view, delete)  
+- Manage posts (view, delete)  
+- View analytics and activity logs  
 
-| Endpoint | Method | Description |
-| :--- | :---: | :--- |
-| `/api/File/upload` | `POST` | Uploads media files (images, videos) to the server. |
-| `/api/Explore/trending` | `GET` | Returns globally trending and popular posts. |
-| `/api/Search/all` | `GET` | Performs a unified search across users and posts. |
-| `/api/Notification/{id}/read` | `PUT` | Marks a specific notification as read. |
+---
+
+## 📷 Project Mockups / Conceptual Screens
+
+![Dashboard Mockup](https://via.placeholder.com/800x400.png?text=Admin+Dashboard)
+![Feed Mockup](https://via.placeholder.com/800x400.png?text=User+Feed)
+![Messaging Mockup](https://via.placeholder.com/800x400.png?text=Messaging+Screen)
+![Notifications Mockup](https://via.placeholder.com/800x400.png?text=Notifications+Screen)
+
+> These images are placeholders showing the general layout and flow of the platform.
+
+---
+
+## ⚡ Project Workflow / Flow
+
+1. **User Authentication:** Register or login → Receive JWT → Access protected endpoints  
+2. **Content Management:** Users can create posts → Comments & Likes → Notifications are triggered  
+3. **Friendship System:** Send/accept requests → Update friends list → Trigger notifications  
+4. **Messaging:** Real-time messages via SignalR → Mark as read → Update conversation history  
+5. **File Handling:** Upload images/videos → Store in server → Attach to posts or messages  
+6. **Admin Monitoring:** Admin can manage users/posts and view system analytics  
 
 ---
 
 ## 💻 Getting Started
 
 ### Prerequisites
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)  
+- SQL Server or any compatible database  
+- Visual Studio 2022 / VS Code  
 
-* **[.NET 8.0 SDK](https://dotnet.microsoft.com/download):** Required to build and run the project.
-* **[Your Database System]:** (e.g., SQL Server instance running locally).
+### Installation Steps
+```bash
+# Clone the repository
+git clone https://github.com/abda-24/SocialApp.git
+cd SocialApp
 
-### Installation
+# Update connection strings in appsettings.json
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [YOUR_REPO_URL]
-    cd SocialApp.Backend
-    ```
+# Apply database migrations
+dotnet ef database update -c AuthDbContext
+dotnet ef database update -c AppDbContext
 
-2.  **Configure Database Connection:**
-    * Update the `ConnectionStrings` section in `appsettings.Development.json`.
-    * *If using Entity Framework Core, run migrations:*
-        ```bash
-        dotnet ef database update
-        ```
-
-3.  **Run the API:**
-    ```bash
-    dotnet run
-    # API will typically run on: https://localhost:7051
-    ```
-
-### Testing and Documentation
-
-Access the interactive **Swagger UI** to test all API endpoints and view schemas:
-
-> [**Open Swagger Documentation**](https://localhost:7051/swagger/index.html) *(Adjust port if required)*
-
----
-
-## 🤝 Contribution Guidelines
-
-We highly value contributions! Whether it's a feature, bug fix, or documentation improvement, your input is welcome.
-
-1.  **Fork** the repository.
-2.  Create a new branch for your feature: `git checkout -b feature/my-cool-feature`
-3.  Commit your changes following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard (e.g., `feat: Add endpoint for user blocking`).
-4.  Push to the branch: `git push origin feature/my-cool-feature`
-5.  Open a **Pull Request (PR)** and detail your changes.
-
----
-
-## **License**
-
-This project is licensed under the [**MIT License**](LICENSE.md).
+# Run the project
+dotnet run
