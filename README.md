@@ -94,18 +94,6 @@ A high-level view of the major system workflows:
 
 ---
 
-## 📷 Project Mockups / Conceptual Screens
-
-These images are conceptual placeholders designed to illustrate the general layout and functional flow of the platform integrated with this backend.
-
-| Feature | Visual Representation |
-| :--- | :--- |
-| **Admin Dashboard** | ![Dashboard Mockup](https://via.placeholder.com/800x200.png?text=Admin+Dashboard) |
-| **User Feed** | ![Feed Mockup](https://via.placeholder.com/800x200.png?text=User+Feed) |
-| **Messaging Screen** | ![Messaging Mockup](https://via.placeholder.com/800x200.png?text=Messaging+Screen) |
-| **Notifications Screen** | ![Notifications Mockup](https://via.placeholder.com/800x200.png?text=Notifications+Screen) |
-
----
 
 ## 💻 Getting Started (Local Setup)
 
